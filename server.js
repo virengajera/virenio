@@ -56,5 +56,5 @@ server.listen(port, host, (err) => {
     return;
   }
 
-  console.log(`Node [name = ${name}] listens on http://${host}:${port}.`);
+  console.log(`Node [name = ${name}] app listens on http://${host}:${port}.`);
 });
