@@ -4,7 +4,7 @@ pipeline {
   
   stages{
  
-    stage("Installation"){
+    stage("install dependency"){
      
       steps{
        
@@ -14,10 +14,10 @@ pipeline {
       
     }
     
-    stage("Build"){
+    stage("build"){
      
       steps{
-        sh "rm -rf *.tar.gz || true"
+        
         sh "tar cvf virenio-$BUILD_NUMBER.tar.gz public package.json server.js"
       }
       
