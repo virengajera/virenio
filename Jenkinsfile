@@ -18,7 +18,7 @@ pipeline {
      
       steps{
         
-        sh "tar cvf virenio-$BUILD_NUMBER.tar.gz public package.json server.js"
+        sh "tar cvf virenio.tar.gz public package.json server.js"
       }
       
     }
