@@ -9,6 +9,7 @@ pipeline {
       steps{
        
         sh "npm install"
+        sh "echo 'hooks demo 1'"
       
       }
       
