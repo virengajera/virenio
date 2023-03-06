@@ -17,7 +17,7 @@ pipeline {
     stage("Build"){
      
       steps{
-        sh "rm -rf *.tar.gz"
+        sh "[-e *.tar.gz] && rm -rf *.tar.gz"
         sh "tar cvf virenio-$BUILD_NUMBER.tar.gz public package.json server.js"
       }
       
